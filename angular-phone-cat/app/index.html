@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" ng-app>
+<head>
+  <meta charset="utf-8">
+  <title>Google Phone Gallery</title>
+</head>
+<body ng-controller="recuperaNomesController">
+
+  Pesquisar: <input ng-model="query"><br />
+
+  
+  <h2 ng-show="nomes.length>0">Nomes</h2>
+  <ul>
+    <li ng-repeat="nome in nomes | filter:query">
+      <a href="#" ng-click="mostrarDescricao(nome.id)">{{nome.sobreNome}}</a>
+    </li>
+    <div ng-show="profile">
+      <div>
+        Id
+        <span ng-bind="profile.id"></span>
+      </div>
+      <div>
+        Sobrenome
+        <span ng-bind="profile.sobreNome"></span>
+      </div>
+      <div>
+        Descrição
+        <span ng-bind="profile.descricao"></span>
+      </div>
+    </div>
+  </ul>
+
+ 
+  
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

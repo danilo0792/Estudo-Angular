@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" ng-app="FundooDirectiveTutorial">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+	<!-- ng-init: Declara Variável rating e atribui a ela o valor 5 -->
+<body ng-init="rating = 5" ng-controller="FundooCtrl">
+	Rating is {{rating}}<br />
+	<!-- Seta ao rating-value o valor de rating(5) -->
+	<div fundoo-rating rating-value="rating" max="10" on-rating-selected="saveRatingToServer(newRating)"></div>
+	
+	<script src="lib/angular.js"></script>
+	<script src="controllers/controllers.js"></script>
+
+	<style>
+		.rating{
+		  color: #a9a9a9;
+		  margin: 0;
+		  padding: 0;
+		}
+
+		ul.rating {
+		  display: inline-block;
+		}
+
+		.rating li {
+		  list-style-type: none;
+		  display: inline-block;
+		  padding: 1px;
+		  text-align: center;
+		  font-weight: bold;
+		  cursor: pointer;
+		}
+
+		.rating .filled {
+		  color: #21568b;
+		}
+	</style>
+
+</body>
+</html>
