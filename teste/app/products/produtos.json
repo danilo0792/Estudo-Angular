@@ -1,0 +1,23 @@
+[
+	{
+		"id": 1,
+		"titulo": "lIVRO STEPS",
+		"descricao": "Por outro lado, a estrutura atual da organização auxilia a preparação e a composição dos procedimentos normalmente adotados",
+		"preco": 12.90
+	},
+
+	{
+		"id": 2,
+		"titulo": "lIVRO BIT",
+		"descricao": "Por outro lado, a estrutura atual da organização auxilia a preparação e a composição dos procedimentos normalmente adotados",
+		"preco": 12.90
+	},
+
+	{
+		"id": 3,
+		"titulo": "lIVRO TERECOTECO",
+		"descricao": "Por outro lado, a estrutura atual da organização auxilia a preparação e a composição dos procedimentos normalmente adotados",
+		"preco": 12.90
+	}
+
+]
