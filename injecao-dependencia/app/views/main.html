@@ -1,0 +1,20 @@
+<div class="hero-unit">
+  <h1>'Allo, 'Allo!</h1>
+  <p>You now have</p>
+  <ul>
+      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
+  </ul>
+  <p>installed.</p>
+  <h3>Enjoy coding! - Yeoman</h3>
+</div>
+<div ng-controller="chavesController">
+	<!-- Criando uma variável chamada teste no meu controller pela minha view usando ng-model -->
+	<input name="injecaoDependencia" type="text" ng-model="teste">
+
+	<!-- Passando para a função digaAlgo o que foi escrito no input de nome:injecaoDependencia -->
+	<button ng-click="digaAlgo(teste)">Algo</button>
+
+<br>
+	<input type="text" ng-model="mensagem">
+	<button ng-click="chamarNotificacao(mensagem)">Notificacao</button>
+</div>
